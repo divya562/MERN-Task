@@ -5,7 +5,8 @@ import cors from "cors"
 const app = express()
 app.use(cors({
      origin: ["https://mern-task-frontendp.vercel.app"],
-     methods: ["GET"]
+     methods: ["GET"],
+       allowedHeaders: ["Content-Type", "Authorization"],
     }))
 
 const monthNames = [
