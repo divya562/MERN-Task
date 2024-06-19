@@ -12,7 +12,7 @@ const TransactionsTable = ({ selectedMonth, searchQuery }) => {
     try {
       setLoading(true);
       const response = await axios.get(
-        "http://localhost:5000/api/transaction",
+        "mern-transaction-dashboard.vercel.app/api/transaction",
         {
           params: {
             search: searchQuery,

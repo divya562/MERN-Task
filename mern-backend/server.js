@@ -3,7 +3,11 @@ import axios from "axios"
 import cors from "cors"
 
 const app = express()
-app.use(cors({ origin: '*' }))
+app.use(cors({
+     origin: [""],
+     methods: ["GET"],
+     credentials: true 
+    }))
 
 const monthNames = [
     "January", "February", "March", "April", "May", "June",
