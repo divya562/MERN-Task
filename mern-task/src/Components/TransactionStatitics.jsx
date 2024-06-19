@@ -7,7 +7,7 @@ const StatisticsForMarch = ({ selectedMonth }) => {
   const fetchStatistics = async () => {
     try {
       const response = await axios.get(
-        "mern-transaction-dashboard.vercel.app/api/TransactionStatistic",
+        "https://mern-transaction-dashboard.vercel.app/api/TransactionStatistic",
         {
           params: { month: selectedMonth },
         }
