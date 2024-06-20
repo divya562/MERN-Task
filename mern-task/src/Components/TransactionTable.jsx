@@ -56,7 +56,7 @@ const TransactionsTable = ({ selectedMonth, searchQuery }) => {
   };
 
   return (
-    <div className="container mx-auto ">
+    <div className=" ">
       {/* <h1 className="text-3xl font-bold text-center mb-6 text-gray-800 p-5">Transactions for {selectedMonth}</h1> */}
 
       <div className="overflow-x-auto mt-8 ">

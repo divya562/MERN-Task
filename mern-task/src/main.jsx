@@ -6,8 +6,10 @@ import './index.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
 
   <React.StrictMode>
-    <div className='container mx-auto'>
+      <div className=" min-h-screen">
+      <div className="mx-auto max-w-screen-xl p-4">
     <App />
+    </div>
     </div>
   </React.StrictMode>,
 )

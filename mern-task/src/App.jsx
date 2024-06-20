@@ -19,7 +19,7 @@ const App = () => {
   };
 
   return (
-    <div className=" container mx-auto mt-10">
+    <div className=" ">
       <h1 className="text-3xl font-bold text-center p-8 mb-4 text-gray-800">
         Transaction Dashboard
       </h1>
