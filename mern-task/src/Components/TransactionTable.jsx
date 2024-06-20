@@ -12,7 +12,11 @@ const TransactionsTable = ({ selectedMonth, searchQuery }) => {
     try {
       setLoading(true);
       const response = await axios.get(
+<<<<<<< HEAD
         "http://localhost:5000/api/transaction",
+=======
+        `https://mern-transaction-dashboard.vercel.app/api/transaction`,
+>>>>>>> 73c48384a2adbaada5aec838dae5b3582c5ab9b2
         {
           params: {
             search: searchQuery,
@@ -33,7 +37,7 @@ const TransactionsTable = ({ selectedMonth, searchQuery }) => {
 
   const fetchStatistics = async () => {
     try {
-      const response = await axios.get("/api/TransactionStatistic", {
+      const response = await axios.get(`https://mern-transaction-dashboard.vercel.app/api/TransactionStatistic`, {
         params: { month: selectedMonth },
       });
       setStatistics(response.data);

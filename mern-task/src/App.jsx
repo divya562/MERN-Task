@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import TransactionsTable from "./Components/TransactionTable";
 import StatisticsForMonth from "./Components/TransactionStatitics";
 import BarChart from "./Components/Barchart";
+import axios from 'axios';
+
 
 const App = () => {
   const [selectedMonth, setSelectedMonth] = useState("March"); 
   const [searchQuery, setSearchQuery] = useState("");
+  axios.defaults.withCredentials = true
 
   const handleMonthChange = (e) => {
     setSelectedMonth(e.target.value);

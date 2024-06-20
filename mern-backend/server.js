@@ -4,9 +4,12 @@ import cors from "cors"
 
 const app = express()
 app.use(cors({
-     origin: "*"
-    }))
+  origin: "",
+  methods: ["GET"],
+  credentials: true
+}));
 
+app.use(express.json());
 const monthNames = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
