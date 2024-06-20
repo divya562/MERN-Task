@@ -10,7 +10,7 @@ const BarChart = ({ selectedMonth }) => {
     const fetchBarChartData = async () => {
       try {
         const response = await axios.get(
-          "mern-transaction-dashboard.vercel.app/api/bar-chart",
+          "http://localhost:5000/api/bar-chart",
           {
             params: { month: selectedMonth },
           }
