@@ -3,9 +3,13 @@ import axios from "axios"
 import cors from "cors"
 
 const app = express()
-app.use(cors());
+const corsOptions = {
+    origin: 'https://mern-task-frontend-cqdw.onrender.com',
+    credentials: true 
+};
 
-app.use(express.json());
+app.use(cors(corsOptions));
+
 const monthNames = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
