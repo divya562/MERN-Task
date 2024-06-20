@@ -4,7 +4,7 @@ import cors from "cors"
 
 const app = express()
 app.use(cors({
-  origin: "",
+  origin: "https://mern-task-frontend-cqdw.onrender.com",
   methods: ["GET"],
   credentials: true
 }));
